@@ -12,6 +12,9 @@
     />
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
     <title>Weather App</title>
   </head>
   <body>
@@ -33,11 +36,11 @@
                 <input
                   type="submit"
                   value="Search"
-                  class="btn btn-primary w-100"
+                  class="btn btn-secondary w-100"
                 />
               </div>
               <div class="col-2">
-              <button class="btn btn-success w-100" id="current-location-button">
+              <button class="btn btn-dark w-100" id="current-location-button">
                   📍
                 </button>
               </div>
@@ -46,7 +49,7 @@
           <div class="overview">
             <h1 id="city"></h1>
             <ul>
-              <li>Last updated: <span id="date"></span></li>
+              <li><span id="date"></span></li>
               <li id="description"></li>
             </ul>
           </div>
@@ -55,7 +58,7 @@
               <div class="d-flex weather temperature">
                 <img src="" alt="Cloudy" id="icon" class="float-left" />
                 <div class="float-left">
-                  <strong 12 id="temperature"></strong
+                  <strong id="temperature"></strong
                   ><span class="units"> °C</span>
                 </div>
               </div>
@@ -89,3 +92,4 @@
     <script src="src/app.js"></script>
   </body>
 </html>
+22
